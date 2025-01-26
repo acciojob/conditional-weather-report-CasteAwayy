@@ -1,9 +1,10 @@
 
-import { useEffect, useState, React} from "react";
+import { useEffect, useState } from "react";
+import React from 'react';
 import WeatherDisplay from "./WeatherDisplay.js";
 import './../styles/App.css';
 
-export default function App() {
+const App = ()=> {
   const weatherInit = { temperature: 25, conditions: "Sunny" };
   const [weather, setWeather] = useState(weatherInit);
   useEffect(
@@ -19,3 +20,4 @@ export default function App() {
   );
   return <WeatherDisplay weatherData={weather} />;
 }
+export default App;
