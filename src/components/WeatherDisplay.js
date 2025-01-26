@@ -5,10 +5,7 @@ export default function WeatherDisplay({ weatherData }) {
   return (
     <div>
       <p>
-        Temperature:
-        <span style={temperature > 20 ? { color: "red" } : { color: "blue" }}>
-          {temperature}
-        </span>
+        Temperature: <span style={temperature > 20 ? { color: "red" } : { color: "blue" }}>{temperature}</span>
       </p>
       <p>Conditions: {conditions}</p>
     </div>
